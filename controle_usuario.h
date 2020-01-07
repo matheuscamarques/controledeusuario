@@ -51,9 +51,6 @@ void alterar_usuario(Usuarios *users);
 void pesquisar_usuario(Usuarios *users);
 
 
-//CRIPTOGRAFIA MD5 PARA SENHAS
-
-
 //CADASTRO DE USUARIO
 Usuarios cadastraUsuario();
     long int  recebeCpf();

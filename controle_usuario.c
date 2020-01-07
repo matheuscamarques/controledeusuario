@@ -5,9 +5,6 @@
 
 */
 
-
-
-
 #include "controle_usuario.h"
 
 
@@ -33,7 +30,7 @@ long int recebeCpf(){
 
     //VALIDAÇÃO DE CPF
     return cpf;
-};
+}
 
 char *recebeNome(){
     char *nome = (char*)malloc(sizeof(char)*60);
@@ -42,7 +39,7 @@ char *recebeNome(){
         
     
     return nome;
-};
+}
 
 char *recebeEmail(){
     char *email = (char*)malloc(sizeof(char)*60);
@@ -51,7 +48,7 @@ char *recebeEmail(){
 
     //VALIDAÇÃO DE EMAIL
     return email;
-};
+}
 
 long int recebeDataNasc(){
     long int dataNasc;
@@ -60,7 +57,7 @@ long int recebeDataNasc(){
 
     //VALIDAÇÃO DATA NASCIMENTO
     return dataNasc;
-};
+}
 
 long int recebeTelefone(){
     long int telefone;
@@ -69,7 +66,7 @@ long int recebeTelefone(){
 
     //VALIDAÇÃO DE TELEFONE
     return telefone;
-};
+}
 
 char *recebeRua(){
     char *rua = (char*)malloc(sizeof(char)*60);
@@ -77,14 +74,14 @@ char *recebeRua(){
     scanf(" %s",rua);
 
     return rua; 
-};
+}
 
 long int recebeNumero(){
     long int numero;
     printf("Digite o numero da casa : ");
     scanf(" %li",&numero);
     return numero;
-};
+}
 
 long int recebeCep(){
     long int cep;
@@ -92,7 +89,7 @@ long int recebeCep(){
     scanf(" %li",&cep);
     //VALIDAÇÃO DE CEP
     return cep;
-};
+}
 
 char *recebeLogin(){
     char *login = (char*)malloc(sizeof(char)*60);
@@ -101,7 +98,7 @@ char *recebeLogin(){
     
     //VERIFICAÇÃO DO LOGIN
     return login;
-};
+}
 
 char *recebeSenha(){
     char *senha = (char*)malloc(sizeof(char)*60); ;
@@ -111,7 +108,7 @@ char *recebeSenha(){
 
     //MD5
     return senha;
-};
+}
 
 Usuarios cadastraUsuario(){
 
