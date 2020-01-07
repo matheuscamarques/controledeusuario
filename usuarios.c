@@ -2,14 +2,14 @@ struct usuarios
 {
     Pessoas dados;
     char *login;
-    char *senha;
+    char *senha; //Antes de salvar a senha deve ser convertida para MD5
 
 }typedef Usuarios;
 
 struct pessoas
 {
     int *cpf;
-    char *-nome;
+    char *nome;
     char *email;
     int *data_nascimento;
     int * telefone;
