@@ -5,11 +5,34 @@
 
 */
 
+typedef  struct endereco
+{
+    char* rua;
+    int* numero;
+    int* cep;
+     
+}Endereco;
+
+typedef  struct pessoas
+{
+    int *cpf;
+    char *nome;
+    char *email;
+    int *data_nascimento;
+    int * telefone;
+    Endereco logradouro;
+}Pessoas;
+
+typedef  struct usuarios
+{
+    Pessoas dados;
+    char *login;
+    char *senha; //Antes de salvar a senha deve ser convertida para MD5
+
+}Usuarios;
 
 
-#include <stdlib.h>
-#include <math.h>
-#include "controle_usuario.h"
+
 
 
 //ADICIONAR - Adiciona um usuario em um arquivo JSON
