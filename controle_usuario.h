@@ -4,22 +4,25 @@
     -MANIPULAR OS DADOS
 
 */
+#include <stdlib.h>
+#include <math.h>
+#include <stdio.h>
 
 typedef  struct endereco
 {
     char* rua;
-    int* numero;
-    int* cep;
+    long int numero;
+    long int cep;
      
 }Endereco;
 
 typedef  struct pessoas
 {
-    int *cpf;
+    long int  cpf;
     char *nome;
     char *email;
-    int *data_nascimento;
-    int * telefone;
+    long int data_nascimento;
+    long int telefone;
     Endereco logradouro;
 }Pessoas;
 
@@ -49,3 +52,17 @@ void pesquisar_usuario(Usuarios *users);
 
 
 //CRIPTOGRAFIA MD5 PARA SENHAS
+
+
+//CADASTRO DE USUARIO
+Usuarios cadastraUsuario();
+    long int  recebeCpf();
+    char      *recebeNome();
+    char      *recebeEmail();
+    long int  recebeDataNasc();
+    long int  recebeTelefone();
+    char      *recebeRua();
+    long int  recebeNumero();
+    long int  recebeCep();
+    char      *recebeLogin();
+    char      *recebeSenha();
